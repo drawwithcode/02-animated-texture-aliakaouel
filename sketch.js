@@ -8,11 +8,12 @@ const mycolors = ["powderblue", "sandybrown", "palegreen"]
 
 function setup() {
   createCanvas(windowWidth,windowHeight)
-  background("black")
   // put setup code here
 }
 
 function draw() {
+  background("black")
+
   let c = random(10, i);
   let myc= random(mycolors);
 
@@ -30,4 +31,8 @@ function draw() {
     }
     }
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth,windowHeight);
 }
